@@ -3,13 +3,13 @@ language: ruby
 rvm:
 - 2.3.1
 
-install: gem install jekyll html-proofer
-script: jekyll build && htmlproof ./_site
+before_script:
+  - chmod +x ./build/cibuild
 
-# branch whitelist, only for GitHub Pages
-branches:
-  only:
-    - master
+script: ./build/cibuild
+#install: gem install jekyll html-proofer
+#script: jekyll build && htmlproof ./_site
+
 
 env:
   global:
