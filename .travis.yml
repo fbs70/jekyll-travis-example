@@ -1,7 +1,7 @@
 language: ruby
 
 rvm:
-- 2.3.1
+- 2.3.1 #ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin15]
 
 before_script:
   - chmod +x ./build/cibuild
