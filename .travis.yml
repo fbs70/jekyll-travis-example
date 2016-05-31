@@ -10,7 +10,6 @@ script: jekyll build && htmlproof ./_site
 branches:
   only:
   - gh-pages     # test the gh-pages branch
-  - /pages-(.*)/ # test every branch which starts with "pages-"
 
 env:
   global:
